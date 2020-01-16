@@ -1,0 +1,86 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{graphicx}
+\usepackage{subcaption}
+\usepackage[svgnames]{xcolor}
+\usepackage[a4paper,bindingoffset=0.2in,%
+            left=0.5in,right=0.5in,top=0.5in,bottom=1in,%
+            footskip=.25in]{geometry}
+\pagenumbering{gobble}
+\usepackage[colorlinks=true, linkcolor=Black, urlcolor=Blue]{hyperref}
+
+\begin{document}
+\title{Sprawozdania z zajęć z prototypowania}
+\author{Sebastian Michoń 136770, Mateusz Wankowski XXXXXX,\\ Piotr Król XXXXXX, Maciej Leszczyk XXXXXX}
+\date{\vspace{-3ex}}
+\maketitle
+
+\section{Idee, koncepcje, motywacje}
+Ideą naszego prototypu było stworzenie aplikacji \underline{XXXXXXX(system ticketowy?)}, podobnej do politechnicznego \underline{YYYYY}. Uznaliśmy, że aplikacja politechniczna jest wysoce niedoskonała, skłoniło nas to do pokazania światu nowej, po wielokroć wspanialszej wersji tego systemu, z liczbą opcji, o których paniom z dziekanatu się nie śniło. Nasz aplikacja powinna mieć charakter mobilny, co umożliwi korzystanie z niej poza politechniką.
+
+\section{I etap prototypowania}
+\subsection {Indywidualne pomysły}
+\begin {enumerate}
+	\item Pierwsza koncepja indywidualna (\underline{Wstaw nazwisko}) to możliwość stwierdzenia przy pobraniu biletu, o której dana osoba wchodzi do dziekanatu i czy zgadza się na przesuwanie jej w kolejce na wcześniejszy termin: uznaliśmy, że jeśli osoba ma termin wizyty o kilka godzin późniejszy niż termin pobrania biletu, może chcieć np. zjeść obiad w trakcie czasu oczekiwania - natomiast jeśli i tak czeka w poczekalni, może się zgodzić na przesuwanie jej na jak najwcześniejszy termin jeśli np. jakaś wizyta potrwa krócej niż oczekiwano.
+	
+	\item \underline{Wstaw nazwisko} zauważył, że jeśli ktoś woli czekać w kolejce, to zapewne nie ma niczego ciekawszego z jego perspektywy niż wchodzenie w interakcję z innymi ludźmi - a co za tym idzie, dobrze by było, gdyby nasza aplikacja była wyposażona w substytut messengera predestynowany dla ludzi partycypujących w naszym systemie kolejkowym. Funkcjonalność ta uwzględnia \underline{PRZEREDAGOWAĆ - NIE PAMIĘTAM TEJ FUNKCJONALNOŚCI} możliwość wchodzenia w rozmowy prywatne i publiczne z innymi szczęśliwymi użytkownikami naszej aplikacji, sprawdzanie, które mają miejsce, a także zobaczenie ich zdjęcia w systemie ekonto
+	
+	\item Michoń spostrzegł, że dobrze by było, gdyby osoba zalogowana do systemu miała możliwość obejrzenia swojej historii wizyt w dziekanacie - żeby przypomnieć sobie, z kim ostatnio prowadziła konwersację np. żeby później móc dostarczyć mailem zaległą informację, której nie była w stanie podać w trakcie wizyty.
+
+\end {enumerate}
+
+\subsection {Co wspólne, co różne}
+Wspólną cechą wszystkich projektów były 2 funkcjonalności różne od głównej - możliwość zalogowania się do systemu albo anonimowego użytkowania aplikacji, a także szacowanie czasu pozostałego do wizyty. Różne indywidua wysnuwały jednakże różne wnioski z tych funkcjonalności - jedni opierali o nie funkcjonalność chatu, inni historię i zgodę na przesuwanie w kolejce. Poza tymi 2 kwestiami wszystko inne było różne.
+
+\subsection{Co okazało się dobrym pomysłem, co nie}
+\begin {enumerate}
+	\item Chat okazał się niezgorszym pomysłem, uznaliśmy, że wielu jest ludzi pragnących w trakcie oczekiwania w kolejce prowadzić konwersację z innymi personami. 
+	
+	\item Możliwość stwierdzenia, czy osoba woli być przesuwana także jest opcją, która jest z naszej perspektywy bardzo zasadna - przy długim czasie oczekiwania czasem nie ma sensu siedzieć w kolejce, lepiej wyjść i zająć się czymś innym przed wizytą.
+	
+	\item Historia poprzednich wizyt okazała się przeciętnym pomysłem, niektórzy uważają, że jej jedynym zastosowaniem jest sprawdzenie, ile czasu swojego życia zmarnowało się w niezrównanym królestwie biurokracji zwanym dziekanatem, niemniej jednak może stanowić niemałą pomoc dla ludzi roztargnionych i nierozgarniętych, dlatego zdecydowaliśmy się ją uwzględnić w II etapie projektowania apikacji.
+	
+\end {enumerate}
+
+\section {Wnioski z II etapu projektowania aplikacji}
+\subsection {Które pomysły zostały zrealizowane, które nie?}
+\underline{NIE KOJARZĘ NICZEGO, CO NIE ZOSTAŁO ZAIMPLEMENTOWANE}
+\subsection{Które pomysły okazały się trafione, które nie wg osób spoza grupy?}
+\begin{enumerate}
+	\item Trafionym pomysłem okazał się chat - ludzie spoza grupy byli bardzo skorzy do korzystania z tej funkcjonalności aplikacji, może nawet bardziej niż z jej głównej funcjonalności
+	\item Historia wzbudzała kontrowersje - jedni twierdzili, że jest absolutnie zbędna, inni, że może być bardzo pomocna w dostarczaniu zaległych informacji.
+\end{enumerate}
+
+
+\section {Aplikacja w akcji}
+\clearpage
+
+\begin{figure}[h!]
+	\centering
+	\begin{subfigure}[b]{0.25\linewidth}
+		\includegraphics[width=\linewidth]{zdj/morn.jpeg}
+		\caption{Podpis}
+	\end{subfigure}
+	\begin{subfigure}[b]{0.32\linewidth}
+		\includegraphics[width=\linewidth]{zdj/morn.jpeg}
+		\caption{Inny podpis}
+	\end{subfigure}
+	\begin{subfigure}[b]{0.32\linewidth}
+		\includegraphics[width=\linewidth]{zdj/morn.jpeg}
+		\caption{Random}
+	\end{subfigure}
+	\begin{subfigure}[b]{0.48\linewidth}
+		\includegraphics[width=\linewidth]{zdj/morn.jpeg}
+		\caption{kappa}
+	\end{subfigure}
+	\begin{subfigure}[b]{0.48\linewidth}
+		\includegraphics[width=\linewidth]{zdj/morn.jpeg}
+		\caption{}
+	\end{subfigure}
+	\label{fig:nuty}
+	\caption{Prototypy}
+\end{figure}
+
+\end{document}
