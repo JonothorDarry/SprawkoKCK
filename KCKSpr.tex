@@ -54,7 +54,7 @@ Wszystkie indywidualne pomysły zostały zaimplementowane w naszej aplikacji, je
 \subsection{Które pomysły okazały się trafione, które nie według osób spoza grupy?}
 \begin{enumerate}
 	\item Trafionym pomysłem okazał się chat razem z możliwością przeglądania innych osób znajdujących się w kolejce - ludzie spoza grupy byli bardzo skorzy do korzystania z tej funkcjonalności aplikacji, może nawet bardziej niż z jej głównej funcjonalności.
-	\item Prosta funkcjonalność zgody na przesuwanie w kolejce zgodnie z oczekiwaniami nie wzbudzała wielkiego zainteresowania, natomiast różne osoby wybierały albo nie wybirały tą opcję - a co za tym idzie, była zauważana i spełniała swoje zadanie.
+	\item Prosta funkcjonalność zgody na przesuwanie w kolejce zgodnie z oczekiwaniami nie wzbudzała wielkiego zainteresowania, natomiast różne osoby wybierały albo nie wybierały tą opcję - a co za tym idzie, była zauważana i spełniała swoje zadanie.
 	\item Historia wzbudzała kontrowersje - jedni twierdzili, że jest absolutnie zbędna, inni, że może być bardzo pomocna w dostarczaniu zaległych informacji.
 \end{enumerate}
 
@@ -77,15 +77,15 @@ Wszystkie indywidualne pomysły zostały zaimplementowane w naszej aplikacji, je
 \clearpage
 \subsection{Działanie aplikacji:}
 \begin {enumerate}
-	\item Pierwszym ekranem, na które natrafi użytkownik korzystający z aplikacji jest ekran "zaloguj". Są na nim 2 pola tekstowe na email i hasło do politechnicznego ekonta, a także przyciski: "zaloguj", "pobierz anonimowo" i "?". Przycisk "?" podaje informację o szybszym znikaniu numerków anonimowych. Jeśli użytkownik poda złe hasło/login, po kliknięciu przycisku "OK" wyświetli się czerwony komunikat pod przyciskiem "OK": "Niepoprawne dane logowania". Oczywiście "Pobierz anonimowo" pozwala przejść do następnego okna bez logowania.
+	\item Pierwszym ekranem, na który natrafi użytkownik korzystający z aplikacji jest ekran "zaloguj". Są na nim 2 pola tekstowe na email i hasło do politechnicznego ekonta, a także przyciski: "zaloguj", "pobierz anonimowo" i "?". Przycisk "?" podaje informację o szybszym znikaniu numerków anonimowych. Jeśli użytkownik poda złe hasło/login, po kliknięciu przycisku "OK" wyświetli się czerwony komunikat pod przyciskiem "OK": "Niepoprawne dane logowania". Oczywiście "Pobierz anonimowo" pozwala przejść do następnego okna bez logowania.
 	
-	\item Drugi ekran to ekran wyboru kategorii. Jest tam na między innymi "Stypendium rektora", "Leigtymacja studencka", "Stypendium socjalne", a także kategoria specjalna, nie powodująca pobrania numerka: "Historia".
+	\item Drugi ekran to ekran wyboru kategorii. Są tam takie opcje, jak: "Stypendium rektora", "Leigtymacja studencka", "Stypendium socjalne", a także kategoria specjalna, nie powodująca pobrania numerka: "Historia".
 	
-	\item Po wybraniu kategorii różnej od historii pokazuje się komunikat: "Szacowany czas oczekiwania: ${x}$ minut. Czy na pewno chcesz pobrać numerek? Niżej jest checkbox "Wyrażam zgodę na przyspieszenie wizyty". Zaznaczenie checkboxa powoduje, że czas oczekiwania poże się zmniejszyć. Użytkownik może kliknąć "v"(wziąć numerek) lub "x" (nie wziąć numerka).
+	\item Po wybraniu kategorii różnej od historii pokazuje się komunikat: "Szacowany czas oczekiwania: ${x}$ minut. Czy na pewno chcesz pobrać numerek? Niżej jest checkbox "Wyrażam zgodę na przyspieszenie wizyty". Zaznaczenie checkboxa powoduje, że czas oczekiwania może się zmniejszyć. Użytkownik może kliknąć "v"(wziąć numerek) lub "x" (nie wziąć numerka).
 	
 	\item Po wzięciu numerka ukazuje się ekran główny. Na nim jest zdjęcie użytkownika, strzałki w lewo i prawo\underline{WYPEŁNIĆ - CO TO DAJE, ZNACZENIE W KONTEKŚCIE LIVE CHATA}, a także wyśrodkowana informacja o numerze użytkownika, szacowanym pozostałym czasie oczekiwania i liczbie osób w kolejce przed nim. Poniżej przyciski - przycisk ze znakiem budzika prowadzi do ekranu przypomnień, przycisk ze znakiem listy numerowanej do historii, przycisk ze znakiem x-a w kółku do wyjścia z aplikacji,\underline{WYPEŁNIĆ - CO ROBI ZNAK CHMURKI}, przycisk z napisem "Live Chat" prowadzi do czata grupowego. Co istotne, kliknięcie przycisku powrotu w telefonie prowadzi do komunikatu z ostrzeżeniem "Czy na pewno chcesz powrócić? Stracisz numerek i postęp w kolejce".
 	
-	\item Ekran histori przedstawia tabelę z ceem wizyty, datą i nazwiskiem człowieka, u którego rozwiązywano daną kwestię. Dane można sortować dla wygody przyciskami "\^{}" i "v" przy nagłówku kolumny. Kliknięcie powrotu na telefonie prowadzi do okna głównego albo okna kategorii, zależnie od poprzedniego okna.
+	\item Ekran historii przedstawia tabelę z ceem wizyty, datą i nazwiskiem człowieka, u którego rozwiązywano daną kwestię. Dane można sortować dla wygody przyciskami "\^{}" i "v" przy nagłówku kolumny. Kliknięcie powrotu na telefonie prowadzi do okna głównego albo okna kategorii, zależnie od poprzedniego okna.
 	
 	\item Ekran przypomnień pozwala na ustawienie przypomnienia na $x$ minut przed wizytą, gdzie $x\in\{5, 10, 20, 40\}$. Przycisk "OK" ustawia przypomnienie, przycisk "Cancel" nie ustawia przypomnienia i usuwa ustawione wcześniej przypomnienie przez tą aplikację, jeśli takie było. Powrót na telefonie po prostu wraca do poprzedniego ekranu (ekran główny)
 	
