@@ -18,14 +18,14 @@
 \maketitle
 
 \section{Idee, koncepcje, motywacje}
-Ideą naszego prototypu było stworzenie aplikacji wspomagania systemu kolejkowego, podobnej do politechnicznego Zintegrowanego Centrum Obsługi. Uznaliśmy, że aplikacja politechniczna powinna pomagać zaoszczędzić czas studentom. Skłoniło nas to do stworzenia nowej, lepszej wersji tego systemu z dodatkiem kilku ciekawych funkcji. Nasza aplikacja ma charakter mobilny, co umożliwia korzystanie z niej poza politechniką oraz zaoszczędza czas który traciliśmy czekając w kolejce.
+Ideą naszego prototypu było stworzenie aplikacji wspomagania systemu kolejkowego, podobnej do politechnicznego Zintegrowanego Centrum Obsługi. Uznaliśmy, że aplikacja politechniczna powinna pomagać zaoszczędzić czas studentom. Skłoniło nas to do stworzenia nowej, lepszej wersji tego systemu z dodatkiem kilku ciekawych funkcji. Nasza aplikacja ma charakter mobilny, co umożliwia korzystanie z niej poza politechniką oraz zaoszczędzenie czasu traconego na czekanie w kolejce.
 
 \section{I etap prototypowania}
 \subsection {Indywidualne pomysły}
 \begin {enumerate}
-	\item Pierwsza koncepcja indywidualna Piotra to możliwość stwierdzenia, przy pobraniu biletu, czy dana osoba zgadza się na przesuwanie jej w kolejce na wcześniejszy termin. Uznaliśmy, że jeśli osoba ma termin wizyty o kilka godzin późniejszy niż termin pobrania biletu, może chcieć na przykład zjeść obiad w trakcie czasu oczekiwania - natomiast jeśli i tak czeka w poczekalni, może się zgodzić na przesuwanie jej na jak najwcześniejszy termin, jeśli jakaś wizyta potrwa krócej niż oczekiwano albo ktoś zrezygnuje z wizyty.
+	\item Pierwsza koncepcja indywidualna Piotra to możliwość stwierdzenia przy pobraniu biletu, czy dana osoba zgadza się na przesuwanie jej w kolejce na wcześniejszy termin. Uznaliśmy, że jeśli osoba ma termin wizyty o kilka godzin późniejszy niż termin pobrania biletu, może chcieć na przykład zjeść obiad w trakcie czasu oczekiwania - natomiast jeśli i tak czeka w poczekalni, może się zgodzić na przesuwanie jej na jak najwcześniejszy termin, jeśli jakaś wizyta potrwa krócej niż oczekiwano albo ktoś zrezygnuje z wizyty.
 	
-	\item Mateusz zauważył, że czekając w kolejce często nie mamy niczego ciekawego do robienia i dobrze by było umilić ten czas studentom, dzięki możliwości komunikowania się z innymi osobami w kolejce. Do tego celu stworzyliśmy substytut messengera, który umożliwia dołączenie do czatu grupowego, oraz wysyłania wiadomości prywatnych. Dla osób niezainteresowanych czatem przewidzieliśmy możliwość wyłączenia komunikacji.
+	\item Mateusz zauważył, że czekając w kolejce często nie mamy niczego ciekawego do robienia i dobrze by było umilić ten czas studentom dzięki możliwości komunikowania się z innymi osobami w kolejce. Do tego celu stworzyliśmy substytut messengera, który umożliwia dołączenie do czatu grupowego, oraz wysyłanie wiadomości prywatnych. Dla osób niezainteresowanych czatem przewidzieliśmy możliwość wyłączenia komunikacji.
 	
 	\item Pomysł Macieja to umożliwienie przeglądania osób znajdujących się razem z nami w kolejce. Po zalogowaniu się i dołączeniu do poczekalni użytkownik widzi swoje informacje personalne wraz ze zdjęciem, numerkiem w kolejce oraz szacowanym czasem oczekiwania. Oprócz tego interfejs wyposażony jest w guziki next i previous dzięki którym użytkownik może dostrzec analogiczne informacje o innych uczestnikach z kolejki.
 	
@@ -34,7 +34,7 @@ Ideą naszego prototypu było stworzenie aplikacji wspomagania systemu kolejkowe
 \end {enumerate}
 
 \subsection {Co wspólne, co różne}
-Wspólną cechą wszystkich projektów były dwie nowe funkcjonalności - ekran logowania do systemu i mechanizm szacowania czasu pozostałego do wizyty. Poza wyżej wymienionymi funkcjonalnościami, wszystkie pomysły były inne od siebie. 
+Wspólną cechą wszystkich projektów były dwie funkcjonalności różne od głównej - ekran logowania do systemu i mechanizm szacowania czasu pozostałego do wizyty. Poza wyżej wymienionymi funkcjonalnościami indywidualne koncepcje nie miały punktów wspólnych. W trakcie prezentacji różnych koncepcji zauważono jeszcze jedną użyteczność, której implementacja wydaje się zasadna - prosty system przypomnień o wizycie, dzięki któremu użytkownik nie zapomni o niej.
 
 \subsection{Co okazało się dobrym pomysłem, co nie}
 \begin {enumerate}
@@ -42,20 +42,21 @@ Wspólną cechą wszystkich projektów były dwie nowe funkcjonalności - ekran 
 	
 	\item Możliwość stwierdzenia, czy osoba woli być przesuwana w kolejce także jest opcją, która jest z naszej perspektywy bardzo zasadna - przy długim czasie oczekiwania danie użytkownikowi możliwości przyjścia o konkretnej godzinie pozwala mu spożytkować swój czas na inne aktywności niż stanie w kolejce.
 	
-	\item Historia poprzednich wizyt okazała się przeciętnym pomysłem. Niektórzy uważają, że zdecydowana większość użytkowników nie będzie miała potrzeby z niej skorzystać. Taka funkcjonalność może natomiast stanowić pomoc dla niektórych osób i w szybki i wygodny sposób przekazywać potrzebne informacje.
+	\item Historia poprzednich wizyt okazała się przeciętnym pomysłem. Niektórzy uważają, że zdecydowana większość użytkowników nie będzie miała potrzeby z niej skorzystać. Taka funkcjonalność może natomiast stanowić wymierną pomoc dla ludzi, którzy muszą ponownie skontaktować się z osobą z dziekanatu.
 	
 \end {enumerate}
 
 \section {Wnioski z II etapu projektowania aplikacji}
 \subsection {Które pomysły zostały zrealizowane, które nie?}
 
-Wszystkie indywidualne pomysły zostały zaimplementowane w naszej aplikacji, jednak część z nich w inny sposób niż wyobrażał to sobie autor - w pełni zrealizowaline zostały koncepcje historii i zgody na przesuwanie w kolejce, z kolei chat został połączony z możliwością przeglądania użytkowników w kolejce.
+Wszystkie indywidualne pomysły zostały zaimplementowane w naszej aplikacji, jednak część z nich w inny sposób niż wyobrażał to sobie autor - w pełni zrealizowaline zostały koncepcje historii i zgody na przesuwanie w kolejce, z kolei chat został połączony z możliwością przeglądania użytkowników w kolejce. Stworzono także funkcjonalność przypomnienia.
 
 \subsection{Które pomysły okazały się trafione, które nie według osób spoza grupy?}
 \begin{enumerate}
 	\item Trafionym pomysłem okazał się chat razem z możliwością przeglądania innych osób znajdujących się w kolejce - ludzie spoza grupy byli bardzo skorzy do korzystania z tej funkcjonalności aplikacji, niekiedy nawet bardziej niż z jej głównej funcjonalności.
-	\item Prosta funkcjonalność zgody na przesuwanie w kolejce zgodnie z oczekiwaniami nie wzbudzała wielkiego zainteresowania, natomiast różne osoby wybierały albo nie wybierały tą opcję - a co za tym idzie, była zauważana i spełniała swoje zadanie.
+	\item Prosta funkcjonalność zgody na przesuwanie w kolejce zgodnie z oczekiwaniami nie wzbudzała wielkiego zainteresowania, natomiast różne osoby wybierały albo nie wybierały tej opcji - a co za tym idzie, była zauważana i spełniała swoje zadanie.
 	\item Historia wzbudzała kontrowersje - jedni twierdzili, że jest absolutnie zbędna, inni, że może być bardzo pomocna w dostarczaniu potrzebnych informacji.
+	\item Przypomnienia spełniały swoją funkcję, użytkownicy byli skłonni z nich korzystać, aby nie zapomnieć o wizycie.
 \end{enumerate}
 
 
@@ -115,6 +116,31 @@ Wszystkie indywidualne pomysły zostały zaimplementowane w naszej aplikacji, je
 	\item Użytkownik D chce jedynie dosłać przez maila informację dla osoby, która poprzednio go obsługiwała, dlatego po zalogowaniu się wybiera kategorię historia(do użycia której nie potrzebuje numerka). Sprawdza, kto ostatnio go obsługiwał w dziekanacie, aby później wysłać tej osobie maila, następnie zamyka aplikację.\\
 	
 	\textit{Wymienione sytuacje pokazują funkcjonalność aplikacji. Interfejs użytkownika daje wiedzę o tym, co się dzieje w systemie - poza ekranem głownym użytkownik zawsze widzi na szczycie aplikacji nazwę ekranu, z którego aktualnie korzysta. Wszystkie opcje są widoczne z poziomu ekranu głównego. Komunikaty są jednoznaczne, nie dają dużej przestrzeni na błędne interpretacje.}
+\end{enumerate}
+
+\subsection{Problemy wykryte w trakcie ewaluacji heurystycznej}
+
+\begin {enumerate}
+\item Problem: W ekranie historii nie stworzono kolumny z mailem osoby obsługującej\\
+Istotność: 1 (kosmetyczny)\\
+Heurystyka: Zapewnij elastyczność i efektywność\\
+Opis: Podanie maila mogłoby uprościć bezbłedne wpisanie go w telefonie i rozwiązać dwuznaczności w sytuacji, gdy 2 osoby mają to samo imię i nazwisko w systemie politechnicznym.
+
+\item Problem: W ekranie głównym jest kilka opcji rozpraszających użytkownika od głównej funckjonalności\\
+Istotność: 2 (pomniejszy)\\
+Heurystyka: Dbaj o estetykę i umiar\\
+Opis: Umieszczenie możliwości przeglądania innych użytkowników i ich zdjęć na szczycie ekranu głównego systemu kolejkowego sprawia takie wrażenie, jakby to była główna funkcjonalność aplikacji
+
+\item Problem: W ekranie przypomnienia są do wyboru jedynie 4 możliwe opcje czasowe\\
+Istotność: 1 (kosmetyczny)\\
+Heurystyka: Zapewnij elastyczność i efektywność\\
+Opis: W ekranie przypomnienia brakuje możliwości utworzenia przypomnienia na dowolną ilość czasu przed wizytą.
+
+\item Problem: W ekranie głównym użytkownik może nie wiedzieć, który przycisk oznacza jaką opcję. \\
+Istotność: 2 (pomniejszy)\\
+Heurystyka: Zachowaj zgodność pomiędzy systemem a rzeczywistością\\
+Opis: W ekranie głównym krzyżyk w kółku i przycisk historii (lista przypomnienia) nie wskazują jednoznacznie na związane z nimi rezygnację z numerka i ekran historii.
+
 
 \end{enumerate}
 
