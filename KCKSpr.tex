@@ -68,7 +68,7 @@ Wszystkie indywidualne pomysły zostały zaimplementowane w naszej aplikacji, je
 	\centering
 	\begin{subfigure}[b]{1\linewidth}
 		\includegraphics[width=\linewidth]{zdj/mozaika.jpg}
-		\caption{\underline{Podpis}}
+		\caption{Przejścia między oknami}
 	\end{subfigure}
 	\label{fig:nuty}
 	\caption{Nawigacja}
@@ -89,7 +89,7 @@ Wszystkie indywidualne pomysły zostały zaimplementowane w naszej aplikacji, je
 	
 	\item Ekran przypomnień pozwala na ustawienie przypomnienia na $x$ minut przed wizytą, gdzie $x\in\{5, 10, 20, 40\}$. Przycisk "OK" ustawia przypomnienie, przycisk "Cancel" usuwa ustawione wcześniej przypomnienie. Powrót na telefonie po prostu wraca do poprzedniego ekranu (ekran główny)
 	
-	\item Ekran chatu występuje w aplikacji w dwuch formach: konwersacji grupowej oraz prywatnej. Informacja o formie chatu znajduje się na górze ekranu. Ekran ten pozwala na wysyłanie wiadomości poprzez wprowadzenie ich w prostokątne pole na dole ekranu oraz naciśnięcie przycisku ze znakiem strzałki w prawo. Wiadomości innych użytkowników wraz z ich imionami i nazwiskami wyświetlane są po lewej stronie w pomarańczowych chmurkach, natomiast informacje wysłane przez zalogowanego użytkownika po stronie prawej w niebieskich chmurkach
+	\item Ekran chatu występuje w aplikacji w dwóch formach: konwersacji grupowej oraz prywatnej. Informacja o formie chatu znajduje się na górze ekranu. Ekran ten pozwala na wysyłanie wiadomości poprzez wprowadzenie ich w prostokątne pole na dole ekranu oraz naciśnięcie przycisku ze znakiem strzałki w prawo. Wiadomości innych użytkowników wraz z ich imionami i nazwiskami wyświetlane są po lewej stronie w pomarańczowych chmurkach, natomiast informacje wysłane przez zalogowanego użytkownika po stronie prawej w niebieskich chmurkach
 	
 \end{enumerate}
 
@@ -98,7 +98,7 @@ Wszystkie indywidualne pomysły zostały zaimplementowane w naszej aplikacji, je
 \subsection{Przykaładowe scenariusze}
 (kursywą oznaczone są zalety aplikacji pokazane w scenariuszu i elementy ewaluacji heurystcznej)
 \begin {enumerate}
-	\item Użytkownik A postanawia złożyć wniosek o stypendium rektora. Loguje się do systemu, wybierając kategorię "Stypendium Rektora". Dostaje informację - szacowany czas oczekiwania to 150 minut. Uznaje, że lepiej spożytkuje ten czas idąc do restauracji i spożywając tam obiad niż czekając w poczekalni. Z tego powodu nie zaznacza checkboxa "Wyrażam zgodę na przyspieszanie wizyty", klikając od razu na przycisk v. Po naciśnięciu przycisku wyświetlany jest ekran profilu użytkownika. Znajduje się na nim jego numerek oraz czas oczekiwania 150 minut. Użytkownik uznaje, że dobrze byłoby ustawić sobie przypomnienie, aby nie zapomnieć o wizycie. W tym celu wybiera znaczek budzika, następnie dotyka checkboxa przy napisie "20 minut" i klika OK, przechodząc tym samym do ekranu głównego. Użytkownik po otrzymaniu przypomnienia ok. 130 minut później przybywa do dziekanatu, rozwiązuje swój problem i zamyka aplikację.
+	\item Użytkownik A postanawia złożyć wniosek o stypendium rektora. Loguje się do systemu, wybierając kategorię "Stypendium Rektora". Dostaje informację - szacowany czas oczekiwania to 150 minut. Uznaje, że lepiej spożytkuje ten czas idąc do restauracji i spożywając tam obiad niż czekając w poczekalni. Z tego powodu nie zaznacza checkboxa "Wyrażam zgodę na przyspieszanie wizyty", klikając od razu na przycisk v. Po naciśnięciu przycisku wyświetlany jest ekran profilu użytkownika. Znajduje się na nim jego numerek oraz czas oczekiwania 150 minut. Użytkownik uznaje, że dobrze byłoby ustawić sobie przypomnienie, aby nie zapomnieć o wizycie. W tym celu wybiera znaczek budzika, następnie zaznacza checkboxa przy napisie "20 minut" i klika OK, przechodząc tym samym do ekranu głównego. Użytkownik po otrzymaniu przypomnienia ok. 130 minut później przybywa do dziekanatu, rozwiązuje swój problem i zamyka aplikację.
 	
 	\textit{Aplikacja nie komunikuje zbędnych informacji - użytkownik nie musi analizować rozległych okien dialogowych, jedynie bardzo mały zbiór informacji niezbędnych do uzyskania oczekiwanego przez niego efektu, a co za tym idzie, jeśli jakiś komunikat aplikacji jest użyteczny to prawie na pewno zostanie spostrzeżony przez użytkownika.}\\
 	
@@ -117,5 +117,56 @@ Wszystkie indywidualne pomysły zostały zaimplementowane w naszej aplikacji, je
 	\textit{Wymienione sytuacje pokazują funkcjonalność aplikacji. Interfejs użytkownika daje wiedzę o tym, co się dzieje w systemie. Poza ekranem głownym użytkownik zawsze widzi na szczycie aplikacji nazwę ekranu, z którego aktualnie kożysta. Wszystkie opcje są widoczne z poziomu ekranu głównego. Komunikaty są jednoznaczne, nie dają dużej przestrzeni na błędne interpretacje.}
 
 \end{enumerate}
+
+\begin{figure}[h!]
+\subsection{Okna aplikacji}
+\centering
+\begin{subfigure}[ba]{1\linewidth}
+	\includegraphics[width=\linewidth]{zdj/1.jpg}
+	\caption{\underline{Logowanie}}
+\end{subfigure}
+\end{figure}
+\begin{figure}[h!]
+\begin{subfigure}[ba]{1\linewidth}
+	\includegraphics[width=\linewidth]{zdj/2.jpg}
+	\caption{\underline{Wybór kategorii}}
+\end{subfigure}
+\end{figure}
+\begin{figure}[h!]
+\begin{subfigure}[ba]{1\linewidth}
+	\includegraphics[width=\linewidth]{zdj/3.jpg}
+	\caption{\underline{Komunikat systemu(1)}}
+\end{subfigure}
+\end{figure}
+\begin{figure}[h!]
+\begin{subfigure}[ba]{1\linewidth}
+	\includegraphics[width=\linewidth]{zdj/4.jpg}
+	\caption{\underline{Ekran główny}}
+\end{subfigure}
+\end{figure}
+\begin{figure}[h!]
+\begin{subfigure}[ba]{1\linewidth}
+	\includegraphics[width=\linewidth]{zdj/5.jpg}
+	\caption{\underline{Komunikat systemu(2)}}
+\end{subfigure}
+\end{figure}
+\begin{figure}[h!]
+\begin{subfigure}[ba]{1\linewidth}
+	\includegraphics[width=\linewidth]{zdj/6.jpg}
+	\caption{\underline{Okno powiadomień}}
+\end{subfigure}
+\end{figure}
+\begin{figure}[h!]
+\begin{subfigure}[ba]{1\linewidth}
+	\includegraphics[width=\linewidth]{zdj/7.jpg}
+	\caption{\underline{Okno chatu}}
+\end{subfigure}
+\end{figure}
+\begin{figure}[h!]
+\begin{subfigure}[ba]{1\linewidth}
+	\includegraphics[width=\linewidth]{zdj/8.jpg}
+	\caption{\underline{Okno historii wizyt}}
+\end{subfigure}
+\end{figure}
 
 \end{document}
